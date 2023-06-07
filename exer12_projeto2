@@ -1,0 +1,21 @@
+//exer12
+//Crie um programa que lê 6 valores inteiros e os armazene em um vetor,
+// em seguida, mostre na tela os valores lidos.
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+   int i, num[6];
+   printf("Digite 6 numeros inteiros.\n");
+// repetição para ler valores do teclado
+   for(i=0; i<6; i++) {
+    printf("Digite o %d valor: ", (i+1));
+    scanf("%d", &num[i]);
+   }
+ // impressão do vetor
+   printf("Resultado:\n");
+   for(i=0; i<6 ; i++) {
+    printf("%d\n", num[i]);
+   }
+   return 0;
+} 
